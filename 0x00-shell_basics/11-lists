@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la && ls -la ..
+if [ -n "$1" ]; then ls -la "$1"; else ls -la .. /boot; fi
