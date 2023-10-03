@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR==3' iacta
+if [ -e "iacta" ]; then head -n 3 iacta | tail -n 1 else echo "File 'iacta' does not exist."
